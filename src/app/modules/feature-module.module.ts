@@ -10,7 +10,7 @@ import { LandingModule } from './landing/landing.module'
   imports: [
     MainPageModule, 
     LandingModule,
-    CommonModule
+    CommonModule,
   ],
   exports: [MainPageModule, LandingModule]
 })

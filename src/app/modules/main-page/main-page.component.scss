@@ -1,0 +1,69 @@
+.col-book {
+    background-image: url('../../../assets/images/book1.jpg');
+    height: 300px;
+    background-size: cover;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.col-games {
+    background-image: url('../../../assets/images/videogames.jpg');
+    height: 300px;
+    background-size: cover;
+}
+
+.col-animes {
+    background-image: url('../../../assets/images/anime.jpg');
+    height: 300px;
+    background-size: cover;
+}
+
+.col-sports {
+    background-image: url('../../../assets/images/sports1.jpg');
+    height: 300px;
+    background-size: cover;
+}
+
+.col-science {
+    background-image: url('../../../assets/images/science.jpg');
+    height: 300px;
+    background-size: cover;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .col-book:hover {
+    opacity: 0.3;
+  }
+ 
+  .col-animes:hover  {
+    opacity: 0.3;
+  }
+  .col-sports:hover  {
+    opacity: 0.3;
+  }
+  .col-games:hover  {
+    opacity: 0.3;
+  }
+  .col-science:hover  {
+    opacity: 0.3;
+  }
+    
+  .middle:hover  {
+    opacity: 1;
+  }
+
+  .text {
+    color: white;
+    font-size: 60px;
+    padding: 16px 32px;
+  }

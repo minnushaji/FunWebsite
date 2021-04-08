@@ -9,7 +9,7 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
   declarations: [LandingComponent],
   imports: [
     CommonModule,
-    MDBBootstrapModule.forRoot(),
+    MDBBootstrapModule,
   ],
   exports: [LandingComponent]
 })
