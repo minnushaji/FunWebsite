@@ -1,0 +1,98 @@
+.main-container {
+    height: 1000px;
+    background-size: cover;
+    
+//     -webkit-transition: opacity 1s ease-in-out;
+//   -moz-transition: opacity 1s ease-in-out;
+//   -o-transition: opacity 1s ease-in-out;
+//   transition: opacity 1s ease-in-out;
+}
+
+.nav-style {
+    background-color: black;
+}
+
+.vertical {
+    border-left: 2px solid white;
+    height: 1000px;
+    top: 0;
+}
+.text-style {
+    color:white;
+}
+
+.videogames1 {
+    color: white;
+    transition: width 5s;
+}
+
+.videogames1:hover {
+    color: white;
+    width: 50%;
+    background-color: gray;
+    opacity:0.5;
+}
+
+.book2 {
+    color: white;
+    transition: width 2s;
+}
+
+.book2:hover {
+    width: 50%;
+    
+}
+
+.anime {
+    color: white;
+    transition: width 2s;
+}
+
+.anime:hover {
+    width: 50%;
+    
+}
+
+.science {
+    color: white;
+    transition: width 2s;
+}
+
+.science:hover {
+    width: 50%;
+    
+}
+
+.sports1 {
+    color: white;
+    transition: width 2s;
+}
+
+.sports1:hover {
+    width: 50%;
+    
+}
+
+.closed {
+    animation: reverse 1s;
+}
+
+.animate {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position:relative;
+    animation: mymove 5s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes mymove {
+    0%   {top: 0%; left:0%; background: grey; width: 100px;}
+    100% {top: 20%; left:25%; background: white; width: 300px;}
+  }
+
+  @keyframes reverse {
+    0% {top: 20%; left:25%; background: white; width: 300px;}
+    100%   {top: 0%; left:0%; background: grey; width: 100px;}
+    
+  }
