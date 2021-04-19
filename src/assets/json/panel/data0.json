@@ -1,0 +1,37 @@
+[
+    {
+        "id": "videogames1",
+        "background":"url('../../../assets/images/videogames1.jpg')",
+        "title": "Video Games",
+        "animate": false,
+        "url":"videogame"
+    },
+    {
+        "id": "sports",
+        "background":"url('../../../assets/images/sports.jpg')",
+        "title": "Sports",
+        "animate": false,
+        "url":"sports"
+    },
+    {
+        "id": "book2",
+        "background":"url('../../../assets/images/book2.jpg')",
+        "title": "Books and Literature",
+        "animate": false,
+        "url":"book"
+    },
+    {
+        "id": "anime",
+        "background":"url('../../../assets/images/anime.jpg')",
+        "title": "Anime",
+        "animate": false,
+        "url":"anime"
+    },
+    {
+        "id": "science",
+        "background":"url('../../../assets/images/science.jpg')",
+        "title": "Science",
+        "animate": false,
+        "url":"science"
+    }
+]

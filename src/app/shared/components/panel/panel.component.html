@@ -1,0 +1,11 @@
+<div *ngIf="panelId" 
+    (mouseover)="animatePanel(panelId)" 
+    (mouseout)="revert(panelId)"
+    class="d-flex flex-fill panel-width">
+    <div [ngClass]="{animate: panelId.animate}"  class="align-self-stretch panel-title">{{panelId.title}}
+        <div *ngIf="panelId.animate">
+            gfgfgfgffkjghkjfghkdjfghkdjf ghdkfjghkjghdfkjghdfkjgh hg sguhshgf shgsghv khiofhjogi hdfjg
+        </div>
+    </div>
+    
+</div>
