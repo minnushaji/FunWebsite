@@ -1,4 +1,6 @@
+import { AotSummaryResolver } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
+import AOS from 'aos';
 
 @Component({
   selector: 'app-videogames',
@@ -9,7 +11,8 @@ export class VideogamesComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    AOS.init();
   }
 
 }

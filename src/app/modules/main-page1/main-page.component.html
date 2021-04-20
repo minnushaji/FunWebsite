@@ -1,5 +1,5 @@
 <div *ngIf="panelData" [ngStyle]="{'background-image': background}" class="d-flex main-container ">
-    <div class="p-2 nav-style">Menu</div>
+    <div class="p-2"><app-menu></app-menu></div>
     <div *ngFor="let panel of panelData" class="flex-fill">
         <app-panel (click)="goToDetailPage(panel.url)"(mouseover)="changeBackground(panel)" (mouseout)="revert()" [panelId]=panel></app-panel>
     </div>
