@@ -6,11 +6,11 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 
 @NgModule({
-  declarations: [LandingComponent],
+  declarations: [],
   imports: [
     CommonModule,
     MDBBootstrapModule,
   ],
-  exports: [LandingComponent]
+  exports: []
 })
 export class LandingModule { }

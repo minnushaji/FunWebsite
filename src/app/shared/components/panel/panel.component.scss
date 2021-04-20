@@ -1,0 +1,38 @@
+.panel-width {
+    color: white;
+    transition: width 2s;
+    height: -webkit-fill-available;
+    font-style:italic;
+}
+
+.panel-width:hover {
+    width: 700px;
+    background-color:grey;
+    opacity: 0.5;
+    
+}
+
+.vertical {
+    border-right: 1px solid white;
+    height: 1000px;
+    top: 0;
+}
+
+.panel-title {
+    font-size: 2vw;
+    font-family: system-ui;
+}
+
+.animate {
+    width: 100px;
+    position:relative;
+    animation: mymove 5s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes mymove {
+    0%   {top: 0%; left:0%; background: grey; width: 0%; color: white; font-style: italic;
+        font-weight: 700;}
+    100% {top: 20%; left:25%; background: white; width: 70%; color: black; font-style: italic;
+        font-weight: 700;}
+  }
