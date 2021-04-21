@@ -1,13 +1,13 @@
-<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark unique-color" [containerInside]="false">
+<div class="main-background">
+  <mdb-navbar SideClass=" sticky-top navbar navbar-expand-lg navbar-dark " [containerInside]="false">
 
-  <!-- Navbar brand -->
-  <mdb-navbar-brand><a class="navbar-brand" href="#">Navbar</a></mdb-navbar-brand>
+    <!-- Navbar brand -->
+    <mdb-navbar-brand><a class="navbar-brand" href="#">Games</a></mdb-navbar-brand>
 
-  <!-- Collapsible content -->
-  <links>
+    <!-- Collapsible content -->
+    <links>
 
-    <!-- Links -->
-    <ul class="navbar-nav mr-auto">
+      <!-- <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
         <a class="nav-link waves-light" mdbWavesEffect>Home<span class="sr-only">(current)</span></a>
       </li>
@@ -18,7 +18,6 @@
         <a class="nav-link waves-light" mdbWavesEffect>Pricing</a>
       </li>
 
-      <!-- Dropdown -->
       <li class="nav-item dropdown" dropdown>
         <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
           Basic dropdown<span class="caret"></span></a>
@@ -31,74 +30,240 @@
         </div>
       </li>
 
-    </ul>
-    <!-- Links -->
+    </ul> -->
 
-    <ul class="navbar-nav ml-auto nav-flex-icons">
-      <li class="nav-item">
-        <a class="nav-link">
-          <mdb-icon fab icon="twitter"></mdb-icon>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link">
-          <mdb-icon fab icon="google-plus"></mdb-icon>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link">
-          <div class="btn-group" mdbDropdown>
-            <mdb-icon fas icon="user" mdbDropdownToggle></mdb-icon>
-            <div class="dropdown-menu dropdown-menu-right dropdown-primary">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-              <div class="divider dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Separated link</a>
+
+      <ul class="navbar-nav ml-auto nav-flex-icons">
+        <li class="nav-i tem">
+          <a class="nav-link">
+            <mdb-icon fab icon="twitter"></mdb-icon>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">
+            <mdb-icon fab icon="google-plus"></mdb-icon>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">
+            <div class="btn-group" mdbDropdown>
+              <mdb-icon fas icon="user" mdbDropdownToggle></mdb-icon>
+              <div class="dropdown-menu dropdown-menu-right dropdown-primary">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+                <div class="divider dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Separated link</a>
+              </div>
             </div>
-          </div>
-        </a>
-      </li>
-    </ul>
-  </links>
-  <!-- Collapsible content -->
+          </a>
+        </li>
+      </ul>
+    </links>
+    <!-- Collapsible content -->
 
-</mdb-navbar>
-<div class="container">
-<p>videogames works!</p>
-<p>videogames works!</p>
-<div data-aos="zoom-in-up">videogames works!</div>
-<p>videogames works!</p>
-<p>videogames works!</p>
-<p>videogames works!</p>
-v
-<p>videogames works!</p>
+  </mdb-navbar>
+  <div class="container" data-aos="zoom-in" data-aos-duration="3000">
+    <div class="row">
+      <div (click)="scrollToElement($event)" class="col col-witcher">
+        <div class="middle">
+          <div class="text">Witcher</div>
+        </div>
+      </div>
+      <div (click)="scrollToDota()" class="col col-dota">
+        <div class="middle">
+          <div class="text">Dota</div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div (click)="scrollToNier()" class="col col-nier">
+        <div class="middle">
+          <div class="text">Nier: Automata</div>
+        </div>
+      </div>
+      <div (click)="scrollToTombRaider()" class="col col-tombraider">
+        <div class="middle">
+          <div class="text">Tomb raider</div>
+        </div>
+      </div>
+      <div (click)="scrollToCyberpunk()" class="col col-cyberpunk">
+        <div class="middle">
+          <div class="text">Cyberpunk</div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-<p>videogames works!</p><p>videogames works!</p>
+  <div>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+      standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+      type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+      remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+      Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions
+      of Lorem Ipsum.</p>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+      standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+      type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+      remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+      Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions
+      of Lorem Ipsum.</p>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+      standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+      type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+      remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+      Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions
+      of Lorem Ipsum.</p>
+  </div>
 
-<p>videogames works!</p><p>videogames works!</p>
+  <div class="container">
+    <h1 #cyberpunk>Cyberpunk 2077</h1>
+    <div class="row justify-content-center">
+      <div data-aos="zoom-out-right" data-aos-duration="3000" class="col-12 ">
+        <img class="img-style" src="../../../assets/images/cyberpunk1.jpg" />
+      </div>
+    </div>
+    <p>
+      Cyberpunk 2077 is played in a first-person perspective as V,[4] a mercenary whose voice,[5] face, hairstyles, body
+      type and modifications, background, and clothing are customisable. Stat categories—Body, Intelligence, Reflexes,
+      Technical, and Cool—are influenced by the character classes that players assume, which are NetRunner (hacking),
+      Techie (machinery), and Solo (combat). V must consult a "ripperdoc" to upgrade and purchase cyberware implants;
+      black markets offer military-grade abilities.[6] The rarity of any given equipment is shown by a coloured tier
+      system.[7] V can take cover, aim, run, jump, double jump, and slide.[8][9] Melee strikes can be dealt with
+      close-combat weapons.[10][11] There are three types of ranged weapons, all of which can be customised and
+      modified—Power (standard), Tech (which penetrate walls and enemies), and Smart (with homing bullets).[12][13]
+      Ranged weapons are equipped to ricochet bullets in a target's direction and slow them down in bullet time. Four
+      types of damage can be inflicted and resisted—Physical, Thermal, EMP, and Chemical.[14][15][16] Weapon use
+      increases accuracy and reloading speed, which are manifested in character animations.[17] Gunsmiths repair and
+      upgrade weapons.[10] The game can be completed without killing anyone,[18] with non-lethal options for weapons and
+      cyberware.[19]
 
-<p>videogames works!</p><p>videogames works!</p>
+      The open world metropolis Night City, California, consists of six regions—the corporate City Centre,
+      immigrant-inhabited Watson, luxurious Westbrook, suburban Heywood, gang-infested Pacifica, and industrial Santo
+      Domingo. Its surrounding area, the Badlands, can also be explored. V navigates these locations on foot and in
+      vehicles, which are subject to either a third- or first-person view.[6] Pedestrians are vulnerable to vehicular
+      collisions.[13] Depending on the location, law enforcement may be alerted if V commits a crime.[20][21] Radio
+      stations are available to listen to.[22] The full day-night cycle and dynamic weather affect the way non-player
+      characters (NPCs) behave.[12][23]</p>
+    <p> V owns an apartment and a garage.[10][24] Night City features non-English-speaking characters, whose languages
+      can be translated with special implants.[25] "Braindance" is a device that allows V to undergo other people's
+      experiences.[26][27] Branching dialogues enable interaction with NPCs and actions in quests.[28] Experience points
+      are obtained from main quests and fuel the stats; side quests yield "street cred", unlocking skills, vendors,
+      places, and additional quests.[7][12][13][29] Quests are acquired from characters known as Fixers.[13] Throughout
+      the game, V is aided by various companions.[10] Consumables, like soft drinks, are used for healing, and objects
+      can be inspected in V's inventory.[9] Minigames include hacking, boxing, auto racing,[30] martial arts, and
+      shooting ranges.[31] Player choice leads to different endings.[27]
+    </p>
+    <h1 #witcher>Witcher</h1>
+    <div class="row justify-content-center">
+      <div data-aos="zoom-out-right" data-aos-duration="3000" class="col-12 ">
+        <img class="img-style" src="../../../assets/images/witcher1.jpg" />
+      </div>
+    </div>
+    <!-- <div class="row justify-content-center">
+      <div data-aos="zoom-in-right" class="col-4 animate">
+        One of two columns
+      </div>
+      <div data-aos="zoom-in-right" class="col-4 animate">
+        One of two columns
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div data-aos="zoom-in-right" class="col-4 animate">
+        One of two columns
+      </div>
+      <div data-aos="zoom-in-right" class="col-4 animate">
+        One of two columns
+      </div>
+    </div> -->
 
-<p>videogames works!</p>
-v<p>videogames works!</p>
 
-<p>videogames works!</p>
-<p>videogames works!</p>
+    <p>The Witcher 3: Wild Hunt
+      is an action role-playing game developed and published by Polish developer CD Projekt Red
+      and is based on The Witcher series of fantasy novels written by Andrzej Sapkowski.
+      It is the sequel to the 2011 game The Witcher 2: Assassins of Kings and the third main installment
+      in The Witcher video game series, played in an open world with a third-person perspective.</p>
 
-<p>videogames works!</p><p>videogames works!</p>
-<p>videogames works!</p>
-<p>videogames works!</p>
-<p>videogames works!</p>v
+    <p>The game takes place in a fictional fantasy world based on Slavonic mythology.
+      Players control Geralt of Rivia, a monster slayer for hire known as a Witcher,
+      and search for his adopted daughter, who is on the run from the otherworldly Wild Hunt.
+      Players battle the game's many dangers with weapons and magic, interact with non-player characters,
+      and complete quests to acquire experience points and gold,
+      which are used to increase Geralt's abilities and purchase equipment.
+      The game's story has three possible endings,
+      determined by the player's choices at key points in the narrative.</p>
 
-<p>videogames works!</p>
-<div data-aos="fade-left" data-aos-duration="3000" class="animate">This is the animated content </div>
+    <h1 #nier>Nier: Automata</h1>
 
-<p>videogames works!</p>
-<p>videogames works!</p>
+    <div class="row justify-content-center">
+      <div data-aos="zoom-out-right" data-aos-duration="3000" class="col-12 ">
+        <img class="img-style" src="../../../assets/images/nier2.jpg" />
+      </div>
+    </div>
 
-<p>videogames works!</p><p>videogames works!</p>
-<p>videogames works!</p>
-<p>videogames works!</p>
-<p>videogames works!</p>
+    <p>Nier: Automata shares the post-apocalyptic setting of Nier, taking place thousands of years after the game's
+      fourth ending.The universe of Nier takes place in an alternate timeline within the Drakengard series.
+      While carrying over the Drakengard tradition of a dark atmosphere and branching storylines, no direct narrative
+      connection is shared between Nier: Automata and the rest of the series.
+      Set in the year 11945 AD, the story revolves around a proxy war between the human-made androids and the machine
+      army of invaders from another world.
+      Lacking both emotions and true names, androids have particular attitudes that distinguish them from their fellows.
+      The "YoRHa" android forces are commanded from the Bunker, a reconnaissance base in orbit above Earth. They fight
+      alongside the pre-YoRHa androids on Earth (known as the Resistance) to drive back the Machines.</p>
+
+    <h1 #tombraider>Tomb Raider</h1>
+
+    <div class="row justify-content-center">
+      <div data-aos="zoom-out-right" data-aos-duration="3000" class="col-12 ">
+        <img class="img-style" src="../../../assets/images/tombraider1.jpg" />
+      </div>
+    </div>
+
+    <p>Tomb Raider is presented in third-person perspective.
+      Players take control of the series lead character Lara Croft.
+      The game uses an interconnected hub-and-spoke model that combines action-adventure,
+      exploration, and survival mechanics.
+      Players can traverse between the camps and across the island using footpaths,
+      improvised or already-available ziplines and climbable tracks. Many of the players' moves
+      are carried over from the previous games created by Crystal Dynamics, with some tweaks
+      added, such as incorporating elements of stealth gameplay.
+      Quick time events are scattered at regular intervals throughout the game,
+      often appearing at crucial or fast-moving points in the game's plot,
+      such as extracting a shard of metal, and escaping a collapsing cave.</p>
+
+    <h1 #dota>Dota 2</h1>
+    <div class="row justify-content-center">
+      <div data-aos="zoom-out-right" data-aos-duration="3000" class="col-12 ">
+        <img class="img-style" src="../../../assets/images/dota1.jpg" />
+      </div>
+    </div>
+
+
+    <p>Dota 2 is a multiplayer online battle arena (MOBA) video game in which two teams of five players compete to
+      collectively destroy a large structure defended by the opposing team known as the "Ancient", whilst defending
+      their own.[1][2] As in Defense of the Ancients, the game is controlled using standard real-time strategy controls,
+      and is presented on a single map in a three-dimensional isometric perspective.[1][3] Ten players each control one
+      of the game's 121 playable characters, known as "heroes", with each having their own design, strengths, and
+      weaknesses.[1][2][4] Heroes are divided into two primary roles, known as the core and support.[5][6]
+
+      Cores, which are also called carries, begin each match as weak and vulnerable,
+      but are able to become more powerful later in the game, thus becoming able to "carry" their team
+      to victory. Supports generally lack abilities that deal heavy damage,
+      instead having ones with more functionality and utility that provide assistance for their cores,
+      such as providing healing and other buffs.Players select their hero during a pre-game
+      drafting phase, where they can also discuss potential strategies and hero matchups with their
+      teammates.Heroes are removed from the drafting pool and become unavailable for all other players
+      once one is selected, and can not be changed once the drafting phase is over. All heroes have a
+      basic attack in addition to powerful abilities, which are the primary method of fighting. Each
+      hero has at least four of them, all of which are unique. </p>
+
+    <p>Heroes begin each game with an
+      experience level of one, only having access to one of their abilities, but are able to level
+      up and become more powerful during the course of the game, up to a maximum level of 30.
+      Whenever a hero gains an experience level, the player is able to unlock another of their
+      abilities or improve one already learned.
+      The most powerful ability for each hero is known as their "ultimate", which requires them
+      to have an experience level of six in order to use.</p>
+  </div>
+
 </div>

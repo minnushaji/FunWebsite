@@ -1,3 +1,85 @@
+.main-background {
+    background-color: black;
+    color: white;
+}
+
+.unique-color {
+    background-color: black !important;
+}
 .animate {
     background-color: green;
 }
+
+.img-style {
+    height: 100%;
+    width: 100%;
+}
+.col-witcher {
+    background-image: url('../../../assets/images/witcher.jpg');
+    height: 300px;
+    background-size: cover;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.col-tombraider {
+    background-image: url('../../../assets/images/tombraider.jpg');
+    height: 300px;
+    background-size: cover;
+}
+
+.col-cyberpunk {
+    background-image: url('../../../assets/images/cyberpunk.jpg');
+    height: 300px;
+    background-size: cover;
+}
+
+.col-nier {
+    background-image: url('../../../assets/images/nier.jpg');
+    height: 300px;
+    background-size: cover;
+}
+
+.col-dota {
+    background-image: url('../../../assets/images/dota.jpg');
+    height: 300px;
+    background-size: cover;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .col-witcher:hover {
+    opacity: 0.3;
+  }
+ 
+  .col-cyberpunk:hover  {
+    opacity: 0.3;
+  }
+  .col-nier:hover  {
+    opacity: 0.3;
+  }
+  .col-tombraider:hover  {
+    opacity: 0.3;
+  }
+  .col-dota:hover  {
+    opacity: 0.3;
+  }
+    
+  .middle:hover  {
+    opacity: 1;
+  }
+
+  .text {
+    color: white;
+    font-size: 60px;
+    padding: 16px 32px;
+  }

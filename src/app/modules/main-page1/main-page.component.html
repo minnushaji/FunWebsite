@@ -1,19 +1,9 @@
 <div *ngIf="panelData" [ngStyle]="{'background-image': background}" class="d-flex main-container ">
-    <div class="p-2"><app-menu></app-menu></div>
-    <div *ngFor="let panel of panelData" class="flex-fill">
-        <app-panel (click)="goToDetailPage(panel.url)"(mouseover)="changeBackground(panel)" (mouseout)="revert()" [panelId]=panel></app-panel>
+    <div class="p-2">
+        <app-menu></app-menu>
     </div>
-    <!-- <div id="anime" class="flex-fill anime" (mouseover)="changeBackground($event)" (mouseout)="revert()">Flex item</div> -->
-
-    
-    <!-- <div id="videogames1" class="flex-fill videogames1" (mouseover)="changeBackground($event)" (mouseout)="revert()">
-        <div id="videogames1" [ngClass]="{animate: videostatus, closed: !videostatus}">Video Games</div></div>
-    <div class="vertical"></div>
-    <div id="anime" class="flex-fill anime" (mouseover)="changeBackground($event)" (mouseout)="revert()">Flex item</div>
-    <div class="vertical"></div>
-    <div id="book2" class="flex-fill book2" (mouseover)="changeBackground($event)" (mouseout)="revert()">Flex item</div>
-    <div class="vertical"></div>
-    <div id="science" class="flex-fill science" (mouseover)="changeBackground($event)" (mouseout)="revert()">Flex item</div>
-    <div class="vertical"></div>
-    <div id="sports1" class="flex-fill sports1" (mouseover)="changeBackground($event)" (mouseout)="revert()">Flex item</div> -->
-  </div>
+    <div *ngFor="let panel of panelData" class="flex-fill">
+        <app-panel (click)="goToDetailPage(panel.url)" (mouseover)="changeBackground(panel)" (mouseout)="revert()"
+            [panelId]=panel></app-panel>
+    </div>
+</div>
