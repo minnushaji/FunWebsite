@@ -1,10 +1,20 @@
 .main-background {
     background-color: black;
     color: white;
+    font-family: cursive;
 }
 
 .unique-color {
     background-color: black !important;
+}
+
+img {
+  padding-bottom: 5%;
+}
+
+.paragraph-style {
+    text-align: center;
+    padding: 15%;
 }
 .animate {
     background-color: green;

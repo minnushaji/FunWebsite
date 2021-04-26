@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { SettingsService } from '../../core/services/settings.service';
+import {DataService} from '../../core/services/data.service';
 
 @Component({
   selector: 'app-main-page',
@@ -13,7 +14,8 @@ export class MainPageComponent implements OnInit {
   videostatus = false;
   videogames1 = 'videogames1';
   panelData: any;
-  constructor(private settingsService: SettingsService, private route:Router) { }
+  constructor(private settingsService: SettingsService, private route:Router,
+    private dataService: DataService) { }
 
   ngOnInit() {
     this.getPanelData('panel/data0.json')
@@ -42,6 +44,11 @@ export class MainPageComponent implements OnInit {
         console.log('error is ', error);
       }
     );
+
+    this.dataService.sendGetRequest('bio').subscribe((data: any[])=>{
+      console.log('data from mongoo', data);
+    }) 
+
   }
 
   goToDetailPage(url) {

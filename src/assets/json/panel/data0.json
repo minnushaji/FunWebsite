@@ -4,34 +4,39 @@
         "background":"url('../../../assets/images/videogames1.jpg')",
         "title": "Video Games",
         "animate": false,
-        "url":"videogame"
+        "url":"videogame",
+        "description":"If you think you're a gamer, why don't you click and find out what we have to offer?"
     },
     {
         "id": "sports",
         "background":"url('../../../assets/images/sports.jpg')",
         "title": "Sports",
         "animate": false,
-        "url":"sports"
+        "url":"sports",
+        "description":"Looking for some sports stats? Check this out!"
     },
     {
         "id": "book2",
         "background":"url('../../../assets/images/book2.jpg')",
         "title": "Books and Literature",
         "animate": false,
-        "url":"book"
+        "url":"book",
+        "description":"Books make us wonder. We have created this section for you dreamers who have often found themselves lost in a book"
     },
     {
         "id": "anime",
         "background":"url('../../../assets/images/anime.jpg')",
         "title": "Anime",
         "animate": false,
-        "url":"anime"
+        "url":"anime",
+        "description":"Not everyone gets anime. If you are one of the chosen few, click here!"
     },
     {
         "id": "science",
         "background":"url('../../../assets/images/science.jpg')",
         "title": "Science",
         "animate": false,
-        "url":"science"
+        "url":"science",
+        "description":"Check out the latest news in Tech!"
     }
 ]
